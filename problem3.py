@@ -31,4 +31,8 @@ for i, j in no_of_umpires_by_country.items():
 
 plt.figure(figsize=(10, 10))
 plt.plot(country, count)
+plt.plot(country, count, "o")
+plt.title("Country vs Number_of_umpires")
+plt.xlabel("Country")
+plt.ylabel("Count_of_umpires")
 plt.show()
