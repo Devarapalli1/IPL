@@ -28,10 +28,18 @@ for i, j in b.items():
     batsman.append(i)
     score.append(j)
 
-
+"""
 plt.figure(figsize=(50, 20))
 plt.plot(batsman, score)
 plt.plot(batsman, score, "o", ms=2)
+plt.xticks(rotation=90, fontsize=8)
+plt.title("Bats_Man vs Total_runs")
+plt.xlabel("Bats_Man")
+plt.ylabel("Total_runs")
+plt.show()
+"""
+plt.figure(figsize=(50, 20))
+plt.bar(batsman, score)
 plt.xticks(rotation=90, fontsize=8)
 plt.title("Bats_Man vs Total_runs")
 plt.xlabel("Bats_Man")
